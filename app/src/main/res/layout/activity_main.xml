@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:layout_width="match_parent"
+        app:logo="@drawable/list"
+        app:title="            TIMES NEWS"
+android:background="@color/white"
+        app:titleMarginStart="50dp"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EEF1F3"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="All"
+            android:textSize="12sp"
+
+            android:gravity="center"
+            android:textColor="#504B4B"
+            />
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="65dp"
+            android:text="Image"
+
+            android:gravity="center"
+            android:textColor="#504B4B"
+            android:layout_height="40dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/google"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:text="Google"
+            android:gravity="center"
+            android:textColor="#504B4B"
+
+            />
+        <TextView
+
+            android:layout_width="65dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Live"
+            android:textColor="#504B4B"
+
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:layout_width="65dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Help"
+            android:textColor="#504B4B"
+android:paddingRight="5dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:layout_width="65dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/notification"/></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EEF1F3"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
